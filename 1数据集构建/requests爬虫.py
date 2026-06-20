@@ -21,12 +21,11 @@ def show_final_result(json):
 if __name__ == '__main__':
 
     session=requests.session()
-    # 你的账号和密码
+    # 账号和密码
     data={
         "loginName":'18702534449',
         'password':'12345678A!'
     }
-
 
     #登录界面
     url1='https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A%2F%2Fwww.jd.com%2F%3Fcu%3Dtrue%26utm_source%3Dbaidu-pinzhuan%26utm_medium%3Dcpc%26utm_campaign%3Dt_288551095_baidupinzhuan%26utm_term%3D0f3d30c8dba7459bb52f2eb5eba8ac7d_0_42c1177d48bd4dadb321180175afddb8'
@@ -74,5 +73,3 @@ if __name__ == '__main__':
         print(f"当前店铺是第{pi}个，评论数目是",len(data))
         data.to_csv(r'./脐橙2.csv',index=False,mode='a',header=False)
         # data.to_csv("./test.csv",index=False)
-
-
